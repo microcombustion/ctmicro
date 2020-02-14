@@ -7,7 +7,7 @@ making it a 1D implementation of non-adiabatic combustion)
 **Citation:**
 
 > Mohsen Ayoobi and Ingmar Schoegl, *Non-Catalytic Conversion of Glycerol to Syngas at Intermediate Temperatures: Numerical Methods with Detailed Chemistry*
-> 2017, Fuel 195:190-200, [DOI](https://doi.org/10.1016/j.fuel.2017.01.065)
+> 2017, Fuel 195:190-200, [[DOI]](https://doi.org/10.1016/j.fuel.2017.01.065).
 
 
 ## Conda Environment
@@ -19,9 +19,28 @@ $ conda activate ctmicro
 
 ## Usage
 
-Within your environment, compile and install package
+**Installation:** compile and install a *linked* version within the current python environment
 
 ```
 $ python setup.py build_ext --inplace
 $ pip install -e .
+```
+
+**Update:** run
+
+```
+$ git pull
+$ python setup.py develop
+```
+
+**Unit Tests:** run
+
+```
+$ python setup.py test
+```
+
+**Uninstall:**
+
+```
+$ pip uninstall ctmicro
 ```
