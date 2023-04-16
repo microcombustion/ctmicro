@@ -1,5 +1,8 @@
 # ctmicro
 
+> **Warning**
+> The package is broken for Cantera 3.0, which is related to changes of 1D object instantiation. For guidance how to implement 1D objects, see [ctapp](https://github.com/ischoegl/ctapp).
+
 The code defines a derived cantera class that implements heat transfer within a
 channel with prescribed temperature (i.e. it allows for lateral heat losses,
 making it a 1D implementation of non-adiabatic combustion)
